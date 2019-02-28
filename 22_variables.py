@@ -1,9 +1,12 @@
-from utils import *
+# ----------------------------------------
+# 22
+# Variables
+# ----------------------------------------
+from modules.utils import *
 
-# ====================================
-# PART I: STRINGS
-# ====================================
-banner('strings')
+
+banner('Strings')
+# ----------------------------------------
 
 greeting = "Bruce"
 _myName = "Tim"
@@ -18,19 +21,16 @@ age = 48
 # print(greeting + age)
 
 
-# ====================================
-# PART II: NUMBERS
-# ====================================
-banner('numbers')
+banner('Numbers')
+# ----------------------------------------
 
 a = 12
 b = 3
 
-sep()
-banner("basic operations")
 print(a+b)
 print(a-b)
 print(a*b)
+
 
 # BELOW: normally this is division that returns as an integer.
 # However, 3.6.4 by default seems to do the conversion.
@@ -41,11 +41,14 @@ print(a/b)
 print(a//b)
 print(a % b)
 
-banner("for loop")
+banner("For Loop")
+# ----------------------------------------
 for i in range(1, a/b):
 	print(i)
 
-banner("formulas and casting")
+
+banner("Formulas & Casting")
+# ----------------------------------------
 formula = ((((a + b) / 3) - 4) * 12)
 print(formula)
 print(float(formula)) # implicit cast to float
